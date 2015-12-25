@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  swiftNongJiBang
+//  swiftNongjiBang
 //
-//  Created by lulei on 15/12/16.
+//  Created by lulei on 15/12/23.
 //  Copyright (c) 2015年 xiyang. All rights reserved.
 //
 
@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.whiteColor()
+        self.window?.makeKeyAndVisible()
+        
+        self.window?.rootViewController = XY_MainTabBarController.CustomTabBar()
+        
         return true
     }
 

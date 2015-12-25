@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  XY_MessageController.swift
 //  swiftNongJiBang
 //
 //  Created by lulei on 15/12/16.
@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
+@objc(XY_MessageController)
+class XY_MessageController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
+        self.navigationItem.title = "消息"
+        self.navigationController?.tabBarItem.badgeValue = "99+"
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
